@@ -1,0 +1,200 @@
+@charset "UTF-8";
+@media (max-width: 550px) {
+  /* général */
+  body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+  }
+
+  :root {
+    --violet: #9356dc;
+    --rose: #ff79da;
+    --vert: #99e2d0;
+    --grisClair: #f0f0f0;
+    --grisMoyen: #e2e2e2;
+    --grisFoncé: #524e4e;
+  }
+
+  h1 {
+    font-size: 30px;
+    font-weight: bold 400;
+  }
+
+  h2 {
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  h5 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  /* header */
+  .head {
+    text-align: center;
+  }
+
+  .logo-entreprise {
+    padding: 15px;
+    max-width: 50%;
+    margin-top: 20px;
+  }
+
+  /* Réservation*/
+  .bloc-reservation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .localisation {
+    background-color: var(--grisMoyen);
+    display: flex;
+    padding-left: 30%;
+  }
+
+  .localisation i {
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+
+  .reservation {
+    background-color: var(--grisClair);
+  }
+
+  .reservation-texte {
+    text-align: center;
+    padding-bottom: 10px;
+    padding: 0 30px 0 30px;
+  }
+
+  .reservation-texte h1 {
+    padding-top: 20px;
+    margin-bottom: -10px;
+  }
+
+  .reservation-recherche {
+    text-align: center;
+    padding-bottom: 60px;
+  }
+
+  .bouton-recherche {
+    background: linear-gradient(170deg, #ff79da, #9356dc);
+    border-style: none;
+    color: white;
+    border-radius: 30px;
+    padding: 20px 30px 20px 30px;
+    font-size: 18px;
+  }
+
+  /* Fonctionnement */
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  .fonctionnement h2 {
+    align-items: center;
+  }
+
+  .fonctionnement-choix {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .choix {
+    display: flex;
+    align-items: center;
+    background-color: var(--grisClair);
+    border: 16px solid var(--grisClair);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 16px #0000002e;
+    width: 80%;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .choix i {
+    display: flex;
+    padding-left: 16px;
+    align-items: center;
+    border-radius: 30px;
+    height: 40px;
+    color: var(--grisFoncé);
+  }
+
+  .choix div {
+    position: absolute;
+  }
+
+  .numero {
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    font-size: 15px;
+    font-weight: normal;
+    background: var(--violet);
+    color: white;
+    margin: -28px;
+  }
+
+  .choix :hover {
+    color: var(--violet);
+  }
+
+  /* Restaurant */
+  /* footer */
+  .footer {
+    background-color: var(--grisFoncé);
+    height: 100%;
+    padding: 20px 20px 30px 20px;
+  }
+
+  .footer-logo {
+    padding-bottom: 15px;
+  }
+
+  .footer-logo a {
+    text-decoration: none;
+    color: white;
+    font-family: "Shrikhand", cursif;
+  }
+
+  .footer-texte {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-texte a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 5px;
+  }
+
+  .footer-texte i {
+    width: 15px;
+  }
+
+  .fas {
+    font-size: 14px;
+    padding-right: 10px;
+    color: white;
+  }
+}
+
+/*# sourceMappingURL=style.mobile.css.map */
