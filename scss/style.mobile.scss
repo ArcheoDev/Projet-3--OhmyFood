@@ -1,23 +1,16 @@
 @media (max-width: 550px) {
+  @import "variables";
+
   /* général */
 
   body {
-    font-family: "Roboto", sans-serif;
+    font-family: $font-family;
     margin: 0;
-  }
-
-  :root {
-    --violet: #9356dc;
-    --rose: #ff79da;
-    --vert: #99e2d0;
-    --grisClair: #f0f0f0;
-    --grisMoyen: #e2e2e2;
-    --grisFoncé: #524e4e;
   }
 
   h1 {
     font-size: 30px;
-    font-weight: bold 400;
+    font-weight: bold;
   }
 
   h2 {
@@ -26,13 +19,13 @@
   }
 
   h3 {
-    font-size: 18px;
-    font-weight: normal;
+    font-size: 22px;
+    font-weight: bold;
   }
 
   h4 {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 22px;
+    font-weight: normal;
   }
 
   h5 {
@@ -57,146 +50,196 @@
   .bloc-reservation {
     display: flex;
     flex-direction: column;
+    .localisation {
+      background-color: $grisMoyen;
+      display: flex;
+      padding-left: 30%;
+      i {
+        display: flex;
+        align-items: center;
+        color: black;
+      }
+    }
+    .reservation {
+      background-color: $grisClair;
+    }
+    .reservation-texte {
+      text-align: center;
+      padding-bottom: 10px;
+      padding: 0 30px 0 30px;
+      h1 {
+        padding-top: 20px;
+        margin-bottom: -10px;
+      }
+    }
+    .reservation-recherche {
+      text-align: center;
+      padding-bottom: 60px;
+    }
+    .bouton-recherche {
+      background: linear-gradient(170deg, $rose, $violet);
+      border-style: none;
+      color: white;
+      border-radius: 30px;
+      padding: 20px 30px 20px 30px;
+      font-size: 18px;
+    }
   }
 
-  .localisation {
-    background-color: var(--grisMoyen);
-    display: flex;
-    padding-left: 30%;
-  }
-
-  .localisation i {
-    display: flex;
-    align-items: center;
-    color: black;
-  }
-
-  .reservation {
-    background-color: var(--grisClair);
-  }
-
-  .reservation-texte {
-    text-align: center;
-    padding-bottom: 10px;
-    padding: 0 30px 0 30px;
-  }
-
-  .reservation-texte h1 {
-    padding-top: 20px;
-    margin-bottom: -10px;
-  }
-
-  .reservation-recherche {
-    text-align: center;
-    padding-bottom: 60px;
-  }
-
-  .bouton-recherche {
-    background: linear-gradient(170deg, #ff79da, #9356dc);
-    border-style: none;
-    color: white;
-    border-radius: 30px;
-    padding: 20px 30px 20px 30px;
-    font-size: 18px;
-  }
   /* Fonctionnement */
 
   .fonctionnement {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
+    h2 {
+      align-items: center;
+    }
+    .fonctionnement-choix {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .choix {
+      display: flex;
+      align-items: center;
+      background-color: $grisClair;
+      border: 16px solid $grisClair;
+      border-radius: 20px;
+      margin-bottom: 40px;
+      box-shadow: 0 0 16px #0000002e;
+      width: 80%;
+      font-weight: bold;
+      font-size: 16px;
+      .numero {
+        text-align: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        font-size: 15px;
+        font-weight: normal;
+        background: $violet;
+        color: white;
+        margin: -28px;
+      }
+      i {
+        display: flex;
+        padding-left: 16px;
+        align-items: center;
+        border-radius: 30px;
+        height: 40px;
+        color: $grisFoncé;
+      }
+      div {
+        position: absolute;
+      }
+      span {
+        padding-left: 20px;
+      }
+      :hover {
+        color: $violet;
+      }
+    }
   }
 
-  .fonctionnement h2 {
-    align-items: center;
-  }
+  /* Restaurants */
 
-  .fonctionnement-choix {
+  #restaurants {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    background-color: $grisClair;
+    padding: 30px;
   }
 
-  .choix {
+  .offre-restaurants {
     display: flex;
-    align-items: center;
-    background-color: var(--grisClair);
-    border: 16px solid var(--grisClair);
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: white;
     border-radius: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 16px #0000002e;
-    width: 80%;
-    font-weight: bold;
-    font-size: 16px;
   }
 
-  .choix i {
-    display: flex;
-    padding-left: 16px;
-    align-items: center;
-    border-radius: 30px;
-    height: 40px;
-    color: var(--grisFoncé);
+  .img-restaurants img {
+    width: 100%;
+    height: 250px;
+    border-radius: 20px 20px 0 0;
   }
 
-  .choix div {
+  .nouveau {
+    background-color: $vert;
+    color: $vertFoncé;
+    padding: 10px;
+    right: 40px;
+    border-radius: 5px;
     position: absolute;
+    transform: translate(0%, 50%);
   }
 
-  .numero {
-    text-align: center;
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    font-size: 15px;
+  .texte-bloc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 40px;
+  }
+
+  .texte-restaurants {
+    font-size: 22px;
     font-weight: normal;
-    background: var(--violet);
-    color: white;
-    margin: -28px;
   }
 
-  .choix :hover {
-    color: var(--violet);
+  .texte-restaurants h3 {
+    margin: 0;
+    padding: 0;
   }
 
-  /* Restaurant */
+  .texte-restaurants p {
+    margin: 0;
+    padding: 5px 0 10px 0;
+  }
+
+  .icon {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+
+  .fas:hover {
+    transition: all 0.5s;
+    background: linear-gradient(170deg, $rose, $violet);
+    cursor: grab;
+  }
 
   /* footer */
 
   .footer {
-    background-color: var(--grisFoncé);
+    background-color: $grisFoncé;
     height: 100%;
     padding: 20px 20px 30px 20px;
-  }
-
-  .footer-logo {
-    padding-bottom: 15px;
-  }
-
-  .footer-logo a {
-    text-decoration: none;
-    color: white;
-    font-family: "Shrikhand", cursif;
-  }
-
-  .footer-texte {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .footer-texte a {
-    text-decoration: none;
-    color: white;
-    padding-bottom: 5px;
-  }
-
-  .footer-texte i {
-    width: 15px;
-  }
-
-  .fas {
-    font-size: 14px;
-    padding-right: 10px;
-    color: white;
+    .footer-logo {
+      padding-bottom: 15px;
+      a {
+        text-decoration: none;
+        color: white;
+        font-family: "Shrikhand", cursif;
+      }
+    }
+    .footer-texte {
+      display: flex;
+      flex-direction: column;
+      a {
+        text-decoration: none;
+        color: white;
+        padding-bottom: 5px;
+      }
+      i {
+        width: 15px;
+      }
+    }
+    .fas {
+      font-size: 14px;
+      padding-right: 10px;
+      color: white;
+    }
   }
 }
