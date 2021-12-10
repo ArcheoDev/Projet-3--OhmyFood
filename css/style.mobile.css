@@ -56,6 +56,8 @@
     display: flex;
     align-items: center;
     color: black;
+    margin-right: 20px;
+    font-size: large;
   }
   .bloc-reservation .reservation {
     background-color: #f0f0f0;
@@ -87,9 +89,11 @@
     display: flex;
     flex-direction: column;
     margin-left: 20px;
+    padding: 40px 0 40px 0;
   }
   .fonctionnement h2 {
     align-items: center;
+    padding-bottom: 20px;
   }
   .fonctionnement .fonctionnement-choix {
     display: flex;
@@ -142,7 +146,8 @@
     display: flex;
     flex-direction: column;
     background-color: #f0f0f0;
-    padding: 30px;
+    padding: 30px 30px 80px 30px;
+    gap: 20px;
   }
 
   .offre-restaurants {
