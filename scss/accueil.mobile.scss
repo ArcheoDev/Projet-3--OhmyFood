@@ -33,6 +33,47 @@
     font-weight: bold;
   }
 
+  // Loader
+
+  #loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: $grisClair;
+    animation: loader 2s linear 3s;
+    animation-fill-mode: forwards;
+  }
+
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border: 10px solid $grisMoyen;
+    border-radius: 50%;
+    border-top: 10px solid $violet;
+    border-right: 10px solid $rose;
+    border-bottom: 10px solid $violet;
+    animation: loader 2s linear infinite;
+  }
+
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    99% {
+      transform: rotate(360deg);
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
   /* header */
 
   .head {
