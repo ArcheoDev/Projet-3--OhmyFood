@@ -1,0 +1,92 @@
+// Animation loader
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg) scale(1);
+    border-top: 10px solid $violet;
+    border-bottom: 10px solid $violet;
+  }
+  50% {
+    transform: rotate(360deg) scale(1.15);
+    border-top: 10px solid $vert;
+    border-bottom: 10px solid $vert;
+  }
+
+  75% {
+    transform: rotate(720deg) scale(1);
+    border-top: 10px solid $rose;
+    border-bottom: 10px solid $rose;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes loader-opacite {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+// Animation favori
+
+@keyframes anim_coeur {
+  0% {
+    background: left bottom 0% / 100% 0% no-repeat
+      linear-gradient($rose, $violet);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    background: left bottom 0% / 100% 100% no-repeat
+      linear-gradient($rose, $violet);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+// Animation bloc menu
+
+@keyframes anim-texte-bloc {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Animation selection dans bloc menu
+
+@keyframes anim_selection {
+  0% {
+    opacity: 0;
+
+    // background: left bottom 0% no-repeat;
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+    transition: left 1s, transform 1s;
+    white-space: nowrap;
+    // background: left bottom 100% no-repeat $vert;
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+  }
+}

@@ -1,4 +1,4 @@
-@media (max-width: 550px) {
+@media screen and (min-width: 551px) and (max-width: 1280px) {
   @import "variables";
   @import "keyframes";
 
@@ -85,7 +85,7 @@
 
   .fa-heart::before {
     position: relative;
-    z-index: 0;
+    z-index: 1;
     cursor: pointer;
     font-size: 40px;
     padding-bottom: 20px;
@@ -94,17 +94,15 @@
   .fa-heart:hover::after {
     content: "\f004";
     position: absolute;
-    z-index: 1;
-    margin-left: -41px;
-    margin-top: -1px;
+    z-index: 0;
+    font-size: 40px;
+    padding-bottom: 20px;
     font-weight: bold;
     background: left bottom 0% / 100% 0% no-repeat
       linear-gradient($rose, $violet);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 42px;
-    padding-bottom: 20px;
 
     animation: anim_coeur 1s forwards;
   }
@@ -200,7 +198,7 @@
     transition: transform 2s;
   }
 
-  .texte-bloc :hover {
+  .texte-restaurants :hover {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -283,20 +281,5 @@
       padding-right: 10px;
       color: white;
     }
-  }
-}
-
-@media screen and (min-width: 551px) and (max-width: 1280px) {
-  @import "variables";
-  @import "keyframes";
-
-  #menu {
-    flex-direction: column;
-    align-content: center;
-  }
-
-  .menu-cat {
-    margin: 0;
-    width: auto;
   }
 }
