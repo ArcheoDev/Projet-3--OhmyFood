@@ -67,26 +67,3 @@
     transform: translateY(0);
   }
 }
-
-// Animation selection dans bloc menu
-
-@keyframes anim_selection {
-  0% {
-    opacity: 0;
-
-    // background: left bottom 0% no-repeat;
-    // background-clip: text;
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
-  }
-  100% {
-    opacity: 1;
-    left: 0;
-    transition: left 1s, transform 1s;
-    white-space: nowrap;
-    // background: left bottom 100% no-repeat $vert;
-    // background-clip: text;
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
-  }
-}

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media screen and (min-width: 551px) and (max-width: 1280px) {
+@media screen and (min-width: 551px) and (max-width: 1400px) {
   @keyframes loader {
     0% {
       transform: rotate(0deg) scale(1);
@@ -56,17 +56,6 @@
       transform: translateY(0);
     }
   }
-  @keyframes anim_selection {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-      left: 0;
-      transition: left 1s, transform 1s;
-      white-space: nowrap;
-    }
-  }
   /* général */
   body {
     font-family: "Roboto", sans-serif;
@@ -109,12 +98,14 @@
     max-width: 50%;
     margin-top: 20px;
     margin-left: 25px;
+    display: block;
+    margin: auto;
   }
 
   .bouton {
     background-color: white;
     border: white;
-    font-size: 30px;
+    font-size: 50px;
     padding: 30px;
     text-decoration: none;
     color: black;
@@ -122,6 +113,7 @@
 
   .image-restaurant {
     width: 100%;
+    height: 500px;
   }
 
   .int-restaurant {
@@ -166,7 +158,9 @@
   .liste-plat {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: #f0f0f0;
+    width: 70%;
   }
 
   .plat h3 {
@@ -217,10 +211,6 @@
   }
 
   .selection {
-    display: none;
-  }
-
-  .selection {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -229,6 +219,13 @@
     border-radius: 0 20px 20px 0;
     color: white;
     background-color: #99e2d0;
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  .selection :hover {
+    transform: translateY(0px);
+    opacity: 1;
   }
 
   .selection i {
@@ -256,7 +253,6 @@
   .tarif {
     font-weight: bold;
     display: flex;
-    align-items: flex-end;
     justify-content: flex-start;
     font-size: 14px;
   }

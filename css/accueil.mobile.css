@@ -56,17 +56,6 @@
       transform: translateY(0);
     }
   }
-  @keyframes anim_selection {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-      left: 0;
-      transition: left 1s, transform 1s;
-      white-space: nowrap;
-    }
-  }
   /* général */
   body {
     font-family: "Roboto", sans-serif;
@@ -74,28 +63,33 @@
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
   }
 
   h2 {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: bold;
   }
 
   h3 {
-    font-size: 22px;
+    font-size: 15px;
     font-weight: bold;
   }
 
   h4 {
-    font-size: 22px;
+    font-size: 15px;
     font-weight: normal;
   }
 
   h5 {
     font-size: 16px;
     font-weight: bold;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: normal;
   }
 
   /* header */
@@ -149,6 +143,8 @@
     border-radius: 30px;
     padding: 20px 30px 20px 30px;
     font-size: 18px;
+    box-shadow: 2px 2px 3px #ccc;
+    cursor: pointer;
   }
 
   /* Fonctionnement */
@@ -262,8 +258,6 @@
   }
 
   .texte-restaurants {
-    font-size: 22px;
-    font-weight: normal;
     text-decoration: none;
     color: black;
   }
@@ -286,7 +280,7 @@
     position: relative;
     z-index: 0;
     cursor: pointer;
-    font-size: 40px;
+    font-size: 29px;
     padding-bottom: 20px;
     color: black;
   }
@@ -295,14 +289,14 @@
     content: "\f004";
     position: absolute;
     z-index: 1;
-    margin-left: -41px;
+    margin-left: -31px;
     margin-top: -1px;
     font-weight: bold;
     background: left bottom 0%/100% 0% no-repeat linear-gradient(#ff79da, #9356dc);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 42px;
+    font-size: 32px;
     padding-bottom: 20px;
     animation: anim_coeur 1s forwards;
   }
