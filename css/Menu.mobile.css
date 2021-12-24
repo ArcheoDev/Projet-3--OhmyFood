@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media (max-width: 550px) {
+@media (max-width: 599px) {
   @keyframes loader {
     0% {
       transform: rotate(0deg) scale(1);
@@ -148,22 +148,23 @@ p {
     position: relative;
     z-index: 0;
     cursor: pointer;
-    font-size: 40px;
+    font-size: 29px;
     padding-bottom: 20px;
+    color: black;
   }
 
   .fa-heart:hover::after {
     content: "\f004";
     position: absolute;
     z-index: 1;
-    margin-left: -41px;
+    margin-left: -31px;
     margin-top: -1px;
     font-weight: bold;
     background: left bottom 0%/100% 0% no-repeat linear-gradient(#ff79da, #9356dc);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 42px;
+    font-size: 32px;
     padding-bottom: 20px;
     animation: anim_coeur 1s forwards;
   }
