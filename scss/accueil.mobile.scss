@@ -29,11 +29,6 @@
     font-weight: normal;
   }
 
-  h5 {
-    font-size: 16px;
-    font-weight: bold;
-  }
-
   p {
     font-size: 16px;
     font-weight: normal;
@@ -116,8 +111,11 @@
       border-radius: 30px;
       padding: 20px 30px 20px 30px;
       font-size: 18px;
-      box-shadow: 2px 2px 3px #ccc;
       cursor: pointer;
+    }
+    .bouton-recherche:hover {
+      filter: brightness(1.1);
+      box-shadow: 2px 2px 3px #bebebe;
     }
   }
 
@@ -211,7 +209,8 @@
 
   .img-restaurants img {
     width: 100%;
-    height: 250px;
+    height: 200px;
+    object-fit: cover;
     border-radius: 20px 20px 0 0;
   }
 

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media (max-width: 550px) {
+@media screen and (min-width: 551px) and (max-width: 1400px) {
   @keyframes loader {
     0% {
       transform: rotate(0deg) scale(1);
@@ -60,16 +60,15 @@
   body {
     font-family: "Roboto", sans-serif;
     margin: 0;
-    max-width: 551px;
   }
 
   h1 {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 26px;
     font-weight: bold;
   }
 
@@ -81,11 +80,6 @@
   h4 {
     font-size: 16px;
     font-weight: normal;
-  }
-
-  h5 {
-    font-size: 16px;
-    font-weight: bold;
   }
 
   h3,
@@ -106,31 +100,45 @@ p {
     max-width: 50%;
     margin-top: 20px;
     margin-left: 25px;
+    display: block;
+    margin: auto;
   }
 
   .bouton {
     background-color: white;
     border: white;
-    font-size: 30px;
+    font-size: 50px;
     padding: 30px;
     text-decoration: none;
     color: black;
   }
 
   .image-restaurant {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    height: 500px;
+    object-fit: cover;
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    position: absolute;
   }
 
   .int-restaurant {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 40px 30px 30px;
+    padding: 30px 35px 15px 15px;
     background-color: #f0f0f0;
-    border-radius: 60px 60px 0 0;
-    margin-top: -60px;
-    position: absolute;
-    width: 87%;
+    border-radius: 30px 30px 0 0;
+    z-index: 1;
+    position: relative;
+    top: 420px;
+    margin-bottom: 420px;
   }
 
   .texte {
@@ -140,7 +148,7 @@ p {
 
   .fa-heart::before {
     position: relative;
-    z-index: 0;
+    z-index: 1;
     cursor: pointer;
     font-size: 40px;
     padding-bottom: 20px;
@@ -149,16 +157,14 @@ p {
   .fa-heart:hover::after {
     content: "\f004";
     position: absolute;
-    z-index: 1;
-    margin-left: -41px;
-    margin-top: -1px;
+    z-index: 0;
+    font-size: 40px;
+    padding-bottom: 20px;
     font-weight: bold;
     background: left bottom 0%/100% 0% no-repeat linear-gradient(#ff79da, #9356dc);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 42px;
-    padding-bottom: 20px;
     animation: anim_coeur 1s forwards;
   }
 
@@ -176,9 +182,8 @@ p {
   }
 
   .plat {
-    margin-top: 10px;
     width: 50px;
-    padding: 20px 0px 0px 20px;
+    padding: 10px 0px 0px 20px;
     position: relative;
   }
 
@@ -273,9 +278,12 @@ p {
     color: white;
     border-radius: 30px;
     padding: 20px 30px 20px 30px;
-    font-size: 16px;
-    box-shadow: 2px 2px 3px #ccc;
-    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .bouton-commander:hover {
+    filter: brightness(1.1);
+    box-shadow: 2px 2px 3px #bebebe;
   }
 
   .footer {
@@ -309,72 +317,5 @@ p {
     color: white;
   }
 }
-@media screen and (min-width: 551px) and (max-width: 1280px) {
-  @keyframes loader {
-    0% {
-      transform: rotate(0deg) scale(1);
-      border-top: 10px solid #9356dc;
-      border-bottom: 10px solid #9356dc;
-    }
-    50% {
-      transform: rotate(360deg) scale(1.15);
-      border-top: 10px solid #99e2d0;
-      border-bottom: 10px solid #99e2d0;
-    }
-    75% {
-      transform: rotate(720deg) scale(1);
-      border-top: 10px solid #ff79da;
-      border-bottom: 10px solid #ff79da;
-    }
-    100% {
-      opacity: 0;
-      visibility: hidden;
-    }
-  }
-  @keyframes loader-opacite {
-    0% {
-      opacity: 1;
-    }
-    99% {
-      opacity: 0;
-    }
-    100% {
-      visibility: hidden;
-    }
-  }
-  @keyframes anim_coeur {
-    0% {
-      background: left bottom 0%/100% 0% no-repeat linear-gradient(#ff79da, #9356dc);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    100% {
-      background: left bottom 0%/100% 100% no-repeat linear-gradient(#ff79da, #9356dc);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  }
-  @keyframes anim-texte-bloc {
-    0% {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  #menu {
-    flex-direction: column;
-    align-content: center;
-  }
 
-  .menu-cat {
-    margin: 0;
-    width: auto;
-  }
-}
-
-/*# sourceMappingURL=Menu3_francaise.mobile.css.map */
+/*# sourceMappingURL=Menu.tablette.css.map */
