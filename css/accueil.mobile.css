@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @keyframes loader {
   0% {
     transform: rotate(0deg) scale(1);
@@ -55,7 +54,6 @@
     transform: translateY(0);
   }
 }
-/* général */
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -86,7 +84,30 @@ p {
   font-weight: normal;
 }
 
-/* header */
+#loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  animation: loader-opacite 2s linear 3s;
+  animation-fill-mode: forwards;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border: 10px solid #e2e2e2;
+  border-radius: 50%;
+  animation: loader 2s linear infinite;
+}
+
 .head {
   text-align: center;
 }
@@ -97,7 +118,6 @@ p {
   margin-top: 20px;
 }
 
-/* Réservation*/
 .bloc-reservation {
   display: flex;
   flex-direction: column;
@@ -144,7 +164,6 @@ p {
   box-shadow: 2px 2px 3px #bebebe;
 }
 
-/* Fonctionnement */
 .fonctionnement {
   display: flex;
   flex-direction: column;
@@ -209,7 +228,6 @@ p {
   color: #9356dc;
 }
 
-/* Restaurants */
 #restaurants {
   display: flex;
   flex-direction: column;
@@ -300,7 +318,6 @@ p {
   animation: anim_coeur 1s forwards;
 }
 
-/* footer */
 .footer {
   background-color: #524e4e;
   height: 100%;

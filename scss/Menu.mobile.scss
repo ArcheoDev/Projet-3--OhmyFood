@@ -4,7 +4,7 @@
 /* général */
 
 body {
-  font-family: $font-family;
+  font-family: $Font;
   margin: 0;
 }
 
@@ -82,7 +82,7 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 30px 35px 15px 15px;
-  background-color: $grisClair;
+  background-color: $grisC;
   border-radius: 30px 30px 0 0;
   z-index: 1;
   position: relative;
@@ -111,7 +111,8 @@ p {
   margin-left: -31px;
   margin-top: -1px;
   font-weight: bold;
-  background: left bottom 0% / 100% 0% no-repeat linear-gradient($rose, $violet);
+  background: left bottom 0% / 100% 0% no-repeat
+    linear-gradient($secondaire, $primaire);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -126,13 +127,13 @@ p {
 .liste-plat {
   display: flex;
   flex-direction: column;
-  background-color: $grisClair;
+  background-color: $grisC;
 }
 
 .plat h2 {
   font-size: 15px;
   text-transform: uppercase;
-  border-bottom: medium solid $vert;
+  border-bottom: medium solid $tertiaire;
   padding-bottom: 5px;
 }
 
@@ -219,7 +220,7 @@ p {
   text-align: center;
   padding-bottom: 100px;
   .bouton-commander {
-    background: linear-gradient(170deg, $rose, $violet);
+    background: linear-gradient(170deg, $secondaire, $primaire);
     border-style: none;
     color: white;
     border-radius: 30px;
@@ -238,7 +239,7 @@ p {
 // Footer
 
 .footer {
-  background-color: $grisFoncé;
+  background-color: $grisF;
   height: 100%;
   padding: 20px 20px 30px 20px;
   .footer-logo {

@@ -3,19 +3,19 @@
 @keyframes loader {
   0% {
     transform: rotate(0deg) scale(1);
-    border-top: 10px solid $violet;
-    border-bottom: 10px solid $violet;
+    border-top: 10px solid $primaire;
+    border-bottom: 10px solid $primaire;
   }
   50% {
     transform: rotate(360deg) scale(1.15);
-    border-top: 10px solid $vert;
-    border-bottom: 10px solid $vert;
+    border-top: 10px solid $tertiaire;
+    border-bottom: 10px solid $tertiaire;
   }
 
   75% {
     transform: rotate(720deg) scale(1);
-    border-top: 10px solid $rose;
-    border-bottom: 10px solid $rose;
+    border-top: 10px solid $secondaire;
+    border-bottom: 10px solid $secondaire;
   }
 
   100% {
@@ -41,14 +41,14 @@
 @keyframes anim_coeur {
   0% {
     background: left bottom 0% / 100% 0% no-repeat
-      linear-gradient($rose, $violet);
+      linear-gradient($secondaire, $primaire);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   100% {
     background: left bottom 0% / 100% 100% no-repeat
-      linear-gradient($rose, $violet);
+      linear-gradient($secondaire, $primaire);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

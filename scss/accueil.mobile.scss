@@ -1,10 +1,10 @@
 @import "variables";
 @import "keyframes";
 
-/* général */
+// général
 
 body {
-  font-family: $font-family;
+  font-family: $Font;
   margin: 0;
 }
 
@@ -34,31 +34,31 @@ p {
 }
 // Loader
 
-// #loader-container {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   z-index: 1000;
-//   width: 100%;
-//   height: 100%;
-//   background-color: $grisClair;
-//   overflow: hidden;
-//   animation: loader-opacite 2s linear 3s;
-//   animation-fill-mode: forwards;
-// }
+#loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: $grisC;
+  overflow: hidden;
+  animation: loader-opacite 2s linear 3s;
+  animation-fill-mode: forwards;
+}
 
-// .loader {
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   width: 50px;
-//   height: 50px;
-//   border: 10px solid $grisMoyen;
-//   border-radius: 50%;
-//   animation: loader 2s linear infinite;
-// }
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border: 10px solid $grisM;
+  border-radius: 50%;
+  animation: loader 2s linear infinite;
+}
 
-/* header */
+// header
 
 .head {
   text-align: center;
@@ -70,13 +70,13 @@ p {
   margin-top: 20px;
 }
 
-/* Réservation*/
+// Réservation
 
 .bloc-reservation {
   display: flex;
   flex-direction: column;
   .localisation {
-    background-color: $grisMoyen;
+    background-color: $grisM;
     display: flex;
     padding-left: 30%;
     i {
@@ -88,7 +88,7 @@ p {
     }
   }
   .reservation {
-    background-color: $grisClair;
+    background-color: $grisC;
   }
   .reservation-texte {
     text-align: center;
@@ -104,7 +104,7 @@ p {
     padding-bottom: 60px;
   }
   .bouton-recherche {
-    background: linear-gradient(170deg, $rose, $violet);
+    background: linear-gradient(170deg, $secondaire, $primaire);
     border-style: none;
     color: white;
     border-radius: 30px;
@@ -118,7 +118,7 @@ p {
   }
 }
 
-/* Fonctionnement */
+// Fonctionnement
 
 .fonctionnement {
   display: flex;
@@ -140,8 +140,8 @@ p {
   .choix {
     display: flex;
     align-items: center;
-    background-color: $grisClair;
-    border: 16px solid $grisClair;
+    background-color: $grisC;
+    border: 16px solid $grisC;
     border-radius: 20px;
     margin-bottom: 40px;
     box-shadow: 0 0 16px #0000002e;
@@ -155,7 +155,7 @@ p {
       border-radius: 100%;
       font-size: 15px;
       font-weight: normal;
-      background: $violet;
+      background: $primaire;
       color: white;
       margin: -28px;
     }
@@ -165,7 +165,7 @@ p {
       align-items: center;
       border-radius: 30px;
       height: 40px;
-      color: $grisFoncé;
+      color: $grisF;
     }
     div {
       position: absolute;
@@ -180,16 +180,16 @@ p {
   background-color: #f5edff;
   border: 16px solid #f5edff;
   i {
-    color: $violet;
+    color: $primaire;
   }
 }
 
-/* Restaurants */
+// Restaurants
 
 #restaurants {
   display: flex;
   flex-direction: column;
-  background-color: $grisClair;
+  background-color: $grisC;
   padding: 30px 30px 80px 30px;
   gap: 20px;
 }
@@ -215,8 +215,8 @@ p {
 }
 
 .nouveau {
-  background-color: $vert;
-  color: $vertFoncé;
+  background-color: $tertiaire;
+  color: $vertF;
   padding: 10px;
   right: 40px;
   border-radius: 5px;
@@ -266,20 +266,20 @@ p {
   margin-left: -31px;
   margin-top: -1px;
   font-weight: bold;
-  background: left bottom 0% / 100% 0% no-repeat linear-gradient($rose, $violet);
+  background: left bottom 0% / 100% 0% no-repeat
+    linear-gradient($secondaire, $primaire);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 32px;
   padding-bottom: 20px;
-
   animation: anim_coeur 1s forwards;
 }
 
-/* footer */
+// footer
 
 .footer {
-  background-color: $grisFoncé;
+  background-color: $grisF;
   height: 100%;
   padding: 20px 20px 30px 20px;
   .footer-logo {
