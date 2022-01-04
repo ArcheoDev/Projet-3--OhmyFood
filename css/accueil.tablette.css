@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media screen and (min-width: 600px) and (max-width: 1400px) {
+@media screen and (min-width: 764px) and (max-width: 991px) {
   @keyframes loader {
     0% {
       transform: rotate(0deg) scale(1);
@@ -56,48 +56,6 @@
       transform: translateY(0);
     }
   }
-  /* général */
-  body {
-    font-family: "Roboto", sans-serif;
-    margin: 0;
-  }
-
-  h1 {
-    font-size: 25px;
-    font-weight: bold;
-  }
-
-  h2 {
-    font-size: 20px;
-    font-weight: bold;
-  }
-
-  h3 {
-    font-size: 15px;
-    font-weight: bold;
-  }
-
-  h4 {
-    font-size: 15px;
-    font-weight: normal;
-  }
-
-  p {
-    font-size: 16px;
-    font-weight: normal;
-  }
-
-  /* header */
-  .head {
-    text-align: center;
-  }
-
-  .logo-entreprise {
-    padding: 15px;
-    max-width: 50%;
-    margin-top: 20px;
-  }
-
   /* Réservation*/
   .bloc-reservation {
     display: flex;
@@ -105,49 +63,13 @@
     width: 100%;
   }
   .bloc-reservation .localisation {
-    background-color: #e2e2e2;
-    display: flex;
     align-items: center;
     text-align: center;
     width: 30%;
     padding: 30px;
   }
-  .bloc-reservation .localisation i {
-    display: flex;
-    align-items: center;
-    color: black;
-    margin-right: 20px;
-    font-size: large;
-  }
   .bloc-reservation .reservation {
-    background-color: #f0f0f0;
     width: 100%;
-  }
-  .bloc-reservation .reservation-texte {
-    text-align: center;
-    padding-bottom: 10px;
-    padding: 0 30px 0 30px;
-  }
-  .bloc-reservation .reservation-texte h1 {
-    padding-top: 20px;
-    margin-bottom: -10px;
-  }
-  .bloc-reservation .reservation-recherche {
-    text-align: center;
-    padding-bottom: 60px;
-  }
-  .bloc-reservation .bouton-recherche {
-    background: linear-gradient(170deg, #ff79da, #9356dc);
-    border-style: none;
-    color: white;
-    border-radius: 30px;
-    padding: 20px 30px 20px 30px;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  .bloc-reservation .bouton-recherche:hover {
-    filter: brightness(1.1);
-    box-shadow: 2px 2px 3px #bebebe;
   }
 
   /* Fonctionnement */
@@ -155,84 +77,25 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 20px;
     padding: 50px 0 20px 0;
   }
   .fonctionnement h2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
     padding-left: 10px;
   }
   .fonctionnement .fonctionnement-choix {
-    display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 30px;
     margin: 0 30px 0 40px;
     max-width: 900px;
   }
-  .fonctionnement .fonctionnement-choix :hover {
-    background-color: #f5edff;
-  }
-  .fonctionnement .choix {
-    display: flex;
-    align-items: center;
-    background-color: #f0f0f0;
-    border: 16px solid #f0f0f0;
-    border-radius: 20px;
-    margin-bottom: 40px;
-    box-shadow: 0 0 16px #0000002e;
-    width: 80%;
-    font-weight: bold;
-    font-size: 16px;
-  }
-  .fonctionnement .choix .numero {
-    text-align: center;
-    width: 20px;
-    padding: 2px;
-    border-radius: 100%;
-    font-size: 15px;
-    font-weight: normal;
-    background: #9356dc;
-    color: white;
-    margin: -28px;
-  }
-  .fonctionnement .choix i {
-    display: flex;
-    padding-left: 16px;
-    align-items: center;
-    border-radius: 30px;
-    height: 40px;
-    color: #524e4e;
-  }
-  .fonctionnement .choix div {
-    position: absolute;
-  }
-  .fonctionnement .choix span {
-    padding-left: 20px;
-  }
-
-  .choix:hover {
-    background-color: #f5edff;
-    border: 16px solid #f5edff;
-  }
-  .choix:hover i {
-    color: #9356dc;
-  }
 
   /* Restaurants */
   #restaurants {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #f0f0f0;
-    padding: 30px 30px 80px 30px;
-    gap: 20px;
-  }
-  #restaurants :hover {
-    background-color: #f5edff;
+    justify-content: center;
   }
 
   #restaurants h2 {
@@ -240,114 +103,21 @@
   }
 
   .offre-restaurants {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-width: 300px;
-    min-width: 300px;
-    gap: 20px;
-    background-color: white;
-    border-radius: 20px;
-  }
-
-  .img-restaurants img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
+    max-width: 320px;
+    min-width: 320px;
   }
 
   .nouveau {
-    background-color: #99e2d0;
-    color: #167a61;
-    padding: 10px;
-    right: 40px;
-    border-radius: 5px;
-    transform: translate(0%, 50%);
-  }
-
-  .texte-bloc {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 40px;
-  }
-
-  .texte-restaurants {
-    text-decoration: none;
-    color: black;
-  }
-
-  .offre-restaurants a {
-    text-decoration: none;
-  }
-
-  .texte-restaurants h3 {
-    margin: 0;
-    padding: 0;
-  }
-
-  .texte-restaurants p {
-    margin: 0;
-    padding: 5px 0 10px 0;
-  }
-
-  .fa-heart::before {
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
-    font-size: 29px;
-    padding-bottom: 20px;
-    color: black;
-  }
-
-  .fa-heart:hover::after {
-    content: "\f004";
-    position: absolute;
-    z-index: 1;
-    margin-left: -31px;
-    margin-top: -1px;
-    font-weight: bold;
-    background: left bottom 0%/100% 0% no-repeat linear-gradient(#ff79da, #9356dc);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 32px;
-    padding-bottom: 20px;
-    animation: anim_coeur 1s forwards;
+    right: 470px;
   }
 
   /* footer */
-  .footer {
-    background-color: #524e4e;
-    height: 100%;
-    padding: 20px 20px 30px 20px;
+  .footer-texte {
+    align-items: center;
   }
-  .footer .footer-logo {
-    padding-bottom: 15px;
-  }
-  .footer .footer-logo a {
-    text-decoration: none;
-    color: white;
-    font-family: "Shrikhand", cursif;
-  }
-  .footer .footer-texte {
-    display: flex;
-    flex-direction: column;
-  }
-  .footer .footer-texte a {
-    text-decoration: none;
-    color: white;
-    padding-bottom: 5px;
-  }
-  .footer .footer-texte i {
-    width: 15px;
-  }
-  .footer .fas {
-    font-size: 14px;
-    padding-right: 10px;
-    color: white;
+
+  .footer-logo {
+    justify-content: center;
   }
 }
 

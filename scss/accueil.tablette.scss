@@ -1,75 +1,6 @@
-@media screen and (min-width: 600px) and (max-width: 1400px) {
+@media screen and (min-width: 764px) and (max-width: 991px) {
   @import "variables";
   @import "keyframes";
-
-  /* général */
-
-  body {
-    font-family: $font-family;
-    margin: 0;
-  }
-
-  h1 {
-    font-size: 25px;
-    font-weight: bold;
-  }
-
-  h2 {
-    font-size: 20px;
-    font-weight: bold;
-  }
-
-  h3 {
-    font-size: 15px;
-    font-weight: bold;
-  }
-
-  h4 {
-    font-size: 15px;
-    font-weight: normal;
-  }
-
-  p {
-    font-size: 16px;
-    font-weight: normal;
-  }
-  // Loader
-
-  // #loader-container {
-  //   position: fixed;
-  //   top: 0;
-  //   left: 0;
-  //   z-index: 1000;
-  //   width: 100%;
-  //   height: 100%;
-  //   background-color: $grisClair;
-  //   overflow: hidden;
-  //   animation: loader-opacite 2s linear 3s;
-  //   animation-fill-mode: forwards;
-  // }
-
-  // .loader {
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-  //   width: 50px;
-  //   height: 50px;
-  //   border: 10px solid $grisMoyen;
-  //   border-radius: 50%;
-  //   animation: loader 2s linear infinite;
-  // }
-
-  /* header */
-
-  .head {
-    text-align: center;
-  }
-
-  .logo-entreprise {
-    padding: 15px;
-    max-width: 50%;
-    margin-top: 20px;
-  }
 
   /* Réservation*/
 
@@ -78,50 +9,14 @@
     flex-direction: row;
     width: 100%;
     .localisation {
-      background-color: $grisMoyen;
-      display: flex;
       // justify-content: space-around;
       align-items: center;
       text-align: center;
       width: 30%;
       padding: 30px;
-      i {
-        display: flex;
-        align-items: center;
-        color: black;
-        margin-right: 20px;
-        font-size: large;
-      }
     }
     .reservation {
-      background-color: $grisClair;
       width: 100%;
-    }
-    .reservation-texte {
-      text-align: center;
-      padding-bottom: 10px;
-      padding: 0 30px 0 30px;
-      h1 {
-        padding-top: 20px;
-        margin-bottom: -10px;
-      }
-    }
-    .reservation-recherche {
-      text-align: center;
-      padding-bottom: 60px;
-    }
-    .bouton-recherche {
-      background: linear-gradient(170deg, $rose, $violet);
-      border-style: none;
-      color: white;
-      border-radius: 30px;
-      padding: 20px 30px 20px 30px;
-      font-size: 18px;
-      cursor: pointer;
-    }
-    .bouton-recherche:hover {
-      filter: brightness(1.1);
-      box-shadow: 2px 2px 3px #bebebe;
     }
   }
 
@@ -131,201 +26,47 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 20px;
     padding: 50px 0 20px 0;
     h2 {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      padding-bottom: 20px;
       padding-left: 10px;
     }
     .fonctionnement-choix {
-      display: flex;
       flex-direction: row;
-      align-items: center;
       gap: 30px;
       margin: 0 30px 0 40px;
       max-width: 900px;
-      :hover {
-        background-color: #f5edff;
-      }
-    }
-    .choix {
-      display: flex;
-      align-items: center;
-      background-color: $grisClair;
-      border: 16px solid $grisClair;
-      border-radius: 20px;
-      margin-bottom: 40px;
-      box-shadow: 0 0 16px #0000002e;
-      width: 80%;
-      font-weight: bold;
-      font-size: 16px;
-      .numero {
-        text-align: center;
-        width: 20px;
-        padding: 2px;
-        border-radius: 100%;
-        font-size: 15px;
-        font-weight: normal;
-        background: $violet;
-        color: white;
-        margin: -28px;
-      }
-      i {
-        display: flex;
-        padding-left: 16px;
-        align-items: center;
-        border-radius: 30px;
-        height: 40px;
-        color: $grisFoncé;
-      }
-      div {
-        position: absolute;
-      }
-      span {
-        padding-left: 20px;
-      }
-    }
-  }
-
-  .choix:hover {
-    background-color: #f5edff;
-    border: 16px solid #f5edff;
-    i {
-      color: $violet;
     }
   }
 
   /* Restaurants */
 
   #restaurants {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: $grisClair;
-    padding: 30px 30px 80px 30px;
-    gap: 20px;
-    :hover {
-      background-color: #f5edff;
-    }
+    justify-content: center;
   }
 
   #restaurants h2 {
     flex: 1 1 100%;
   }
-  .offre-restaurants {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-width: 300px;
-    min-width: 300px;
-    gap: 20px;
-    background-color: white;
-    border-radius: 20px;
-  }
 
-  .img-restaurants img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
+  .offre-restaurants {
+    max-width: 320px;
+    min-width: 320px;
   }
 
   .nouveau {
-    background-color: $vert;
-    color: $vertFoncé;
-    padding: 10px;
-    right: 40px;
-    border-radius: 5px;
-    // position: absolute;
-    transform: translate(0%, 50%);
-  }
-
-  .texte-bloc {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 40px;
-  }
-
-  .texte-restaurants {
-    text-decoration: none;
-    color: black;
-  }
-
-  .offre-restaurants a {
-    text-decoration: none;
-  }
-  .texte-restaurants h3 {
-    margin: 0;
-    padding: 0;
-  }
-
-  .texte-restaurants p {
-    margin: 0;
-    padding: 5px 0 10px 0;
-  }
-
-  .fa-heart::before {
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
-    font-size: 29px;
-    padding-bottom: 20px;
-    color: black;
-  }
-
-  .fa-heart:hover::after {
-    content: "\f004";
-    position: absolute;
-    z-index: 1;
-    margin-left: -31px;
-    margin-top: -1px;
-    font-weight: bold;
-    background: left bottom 0% / 100% 0% no-repeat
-      linear-gradient($rose, $violet);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 32px;
-    padding-bottom: 20px;
-
-    animation: anim_coeur 1s forwards;
+    right: 470px;
   }
 
   /* footer */
 
-  .footer {
-    background-color: $grisFoncé;
-    height: 100%;
-    padding: 20px 20px 30px 20px;
-    .footer-logo {
-      padding-bottom: 15px;
-      a {
-        text-decoration: none;
-        color: white;
-        font-family: "Shrikhand", cursif;
-      }
-    }
-    .footer-texte {
-      display: flex;
-      flex-direction: column;
-      a {
-        text-decoration: none;
-        color: white;
-        padding-bottom: 5px;
-      }
-      i {
-        width: 15px;
-      }
-    }
-    .fas {
-      font-size: 14px;
-      padding-right: 10px;
-      color: white;
-    }
+  .footer-texte {
+    align-items: center;
+  }
+  .footer-logo {
+    justify-content: center;
   }
 }
