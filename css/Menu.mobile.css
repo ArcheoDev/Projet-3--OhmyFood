@@ -264,7 +264,8 @@ p {
 
 .texte-bloc:hover .fas.fa-check-circle,
 .texte-bloc:active .fas.fa-check-circle {
-  animation: rotate 0.5s;
+  transform: rotate(360deg);
+  transition: transform 1s;
 }
 
 .commander {

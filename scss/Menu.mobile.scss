@@ -173,6 +173,7 @@ p {
 .fas.fa-check-circle {
   color: white;
 }
+
 .texte_1 {
   margin: 6px 0px 0px 0px;
   font-size: 14px;
@@ -201,6 +202,7 @@ p {
   font-size: 13px;
   margin: 0px 10px 0px 0px;
 }
+
 .texte-bloc:hover .texte_2,
 .texte-bloc:active .texte_2 {
   width: 90%;
@@ -212,7 +214,8 @@ p {
 }
 .texte-bloc:hover .fas.fa-check-circle,
 .texte-bloc:active .fas.fa-check-circle {
-  animation: rotate 0.5s;
+  transform: rotate(360deg);
+  transition: transform 1s;
 }
 
 .commander {
