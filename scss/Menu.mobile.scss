@@ -159,8 +159,8 @@ p {
   position: absolute;
   background-color: #99e2d0;
   top: 0;
-  right: -10%;
-  width: 10%;
+  right: -20%;
+  width: 20%;
   height: 100%;
   border-radius: 0px 20px 20px 0px;
   box-shadow: 2px 2px 3px #ccc;
@@ -177,7 +177,7 @@ p {
 .texte_1 {
   margin: 6px 0px 0px 0px;
   font-size: 14px;
-  max-width: 90%;
+  max-width: 80%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -185,18 +185,21 @@ p {
     margin: 5px 0px 5px 0px;
   }
 }
+
 .texte_2 {
   display: flex;
   justify-content: space-between;
   transition: width 450ms;
   width: 100%;
 }
+
 .description {
   font-size: 13px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
+
 .tarif {
   font-weight: bold;
   font-size: 13px;
@@ -205,13 +208,15 @@ p {
 
 .texte-bloc:hover .texte_2,
 .texte-bloc:active .texte_2 {
-  width: 90%;
+  width: 80%;
 }
+
 .texte-bloc:hover .animation,
 .texte-bloc:active .animation {
   right: 0%;
   animation-fill-mode: forwards;
 }
+
 .texte-bloc:hover .fas.fa-check-circle,
 .texte-bloc:active .fas.fa-check-circle {
   transform: rotate(360deg);
@@ -254,6 +259,7 @@ p {
       font-family: "Shrikhand", cursif;
     }
   }
+
   .footer-texte {
     display: flex;
     flex-direction: column;
@@ -266,6 +272,7 @@ p {
       width: 15px;
     }
   }
+
   .fas {
     font-size: 14px;
     padding-right: 10px;
