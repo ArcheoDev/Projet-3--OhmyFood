@@ -1,0 +1,108 @@
+@media only screen and (min-width: 992px) {
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg) scale(1);
+      border-top: 10px solid #9356dc;
+      border-bottom: 10px solid #9356dc;
+    }
+    50% {
+      transform: rotate(360deg) scale(1.15);
+      border-top: 10px solid #99e2d0;
+      border-bottom: 10px solid #99e2d0;
+    }
+    75% {
+      transform: rotate(720deg) scale(1);
+      border-top: 10px solid #ff79da;
+      border-bottom: 10px solid #ff79da;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  @keyframes loader-opacite {
+    0% {
+      opacity: 1;
+    }
+    99% {
+      opacity: 0;
+    }
+    100% {
+      visibility: hidden;
+    }
+  }
+  @keyframes anim_coeur {
+    0% {
+      background: left bottom 0%/100% 0% no-repeat linear-gradient(#ff79da, #9356dc);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    100% {
+      background: left bottom 0%/100% 100% no-repeat linear-gradient(#ff79da, #9356dc);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  @keyframes anim-texte-bloc {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .head {
+    height: 100%;
+    width: 100%;
+    margin: 0px auto;
+  }
+
+  .logo-entreprise {
+    display: block;
+    margin: auto;
+  }
+
+  .bouton {
+    font-size: 40px;
+  }
+
+  .image-restaurant {
+    height: 500px;
+  }
+
+  .int-restaurant {
+    top: 420px;
+    margin-bottom: 420px;
+  }
+
+  .texte {
+    font-size: 32px;
+  }
+
+  .plat {
+    margin: 10px auto;
+  }
+
+  .int-restaurant {
+    justify-content: space-around;
+  }
+
+  .texte-bloc {
+    width: 50%;
+    margin: 10px auto;
+  }
+
+  .footer-texte {
+    align-items: center;
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=Menu.desktop.css.map */

@@ -1,0 +1,62 @@
+@media only screen and (min-width: 992px) {
+  @import "variables";
+  @import "keyframes";
+
+  // header
+
+  .head {
+    height: 100%;
+    width: 100%;
+    margin: 0px auto;
+  }
+
+  .logo-entreprise {
+    display: block;
+    margin: auto;
+  }
+
+  .bouton {
+    font-size: 40px;
+  }
+
+  //   Image
+
+  .image-restaurant {
+    height: 500px;
+  }
+
+  //   Intitulé Restaurant
+
+  .int-restaurant {
+    top: 420px;
+    margin-bottom: 420px;
+  }
+
+  .texte {
+    font-size: 32px;
+  }
+
+  //   Entrées / plats / desserts
+
+  .plat {
+    margin: 10px auto;
+  }
+
+  .int-restaurant {
+    justify-content: space-around;
+  }
+
+  .texte-bloc {
+    width: 50%;
+    margin: 10px auto;
+  }
+
+  // Footer
+
+  .footer-texte {
+    align-items: center;
+  }
+  .footer-logo {
+    justify-content: center;
+  }
+}
