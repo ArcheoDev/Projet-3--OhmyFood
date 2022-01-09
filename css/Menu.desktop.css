@@ -55,6 +55,26 @@
       transform: translateY(0);
     }
   }
+  h1 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: 17px;
+    font-weight: normal;
+  }
+
   .head {
     height: 100%;
     width: 100%;
@@ -71,12 +91,12 @@
   }
 
   .image-restaurant {
-    height: 500px;
+    height: 300px;
   }
 
   .int-restaurant {
-    top: 420px;
-    margin-bottom: 420px;
+    top: 250px;
+    margin-bottom: 220px;
   }
 
   .texte {
