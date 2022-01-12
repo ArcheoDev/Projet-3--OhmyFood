@@ -55,7 +55,7 @@ p {
   height: 50px;
   border: 10px solid $grisM;
   border-radius: 50%;
-  animation: loader 2s linear infinite;
+  animation: loader 2s linear;
   animation-fill-mode: forwards;
 }
 
