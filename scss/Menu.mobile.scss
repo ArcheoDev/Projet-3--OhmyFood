@@ -157,6 +157,24 @@ p {
   animation: anim-texte-bloc 3s forwards;
 }
 
+.anim--1 {
+  animation-delay: 500ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.anim--2 {
+  animation-delay: 1300ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.anim--3 {
+  animation-delay: 2100ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
 .animation {
   position: absolute;
   background-color: #99e2d0;
