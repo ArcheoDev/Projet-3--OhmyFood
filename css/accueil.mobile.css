@@ -1,22 +1,23 @@
 @keyframes loader {
   0% {
-    transform: rotate(0deg) scale(1);
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
     border-top: 10px solid #9356dc;
     border-bottom: 10px solid #9356dc;
   }
   50% {
-    transform: rotate(360deg) scale(1.15);
+    transform: translate(-50%, -50%) rotate(360deg) scale(1.15);
     border-top: 10px solid #99e2d0;
     border-bottom: 10px solid #99e2d0;
   }
   75% {
-    transform: rotate(720deg) scale(1);
+    transform: translate(-50%, -50%) rotate(720deg) scale(1);
     border-top: 10px solid #ff79da;
     border-bottom: 10px solid #ff79da;
   }
   100% {
     opacity: 0;
     visibility: hidden;
+    transform: translate(-50%, -50%);
   }
 }
 @keyframes loader-opacite {
@@ -106,6 +107,7 @@ p {
   border: 10px solid #e2e2e2;
   border-radius: 50%;
   animation: loader 2s linear infinite;
+  animation-fill-mode: forwards;
 }
 
 .head {
